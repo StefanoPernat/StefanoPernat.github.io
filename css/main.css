@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+:root {
+    --mainColor: #FFDC00;
+    --textColor: #000000;
+    --bQuoteLineHeight: 1.4;
+    --bQuoteBackground: #F9F9F9;
+    --bQuoteFontSize: 20px;
+    --postDetailColor: #a6a6a6;
+
+}
+
+body {
+    border-top: 5px solid var(--mainColor);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    padding: 50px 0;
+    margin: 0
+}
+
+h1.title {
+    font-size: 45pt;
+    font-weight: bold;
+    color: var(--textColor);
+    text-align: start;
+    transform: rotate(90deg);
+}
+
+h2 {
+    font-size: 35pt;
+    font-weight: normal;
+    color: var(--textColor);
+}
+
+h4 {
+    font-weight: normal;
+    font-style: oblique;
+    color: var(--textColor);
+    text-align: center;
+    vertical-align: top;
+}
+
+h4.subtitle {
+    font-weight: normal;
+    font-style: oblique;
+    color: var(--textColor);
+    text-align: center;
+    vertical-align: top;
+    margin-right: 50%;
+    text-align: start;
+    transform: rotate(90deg);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: var(--textColor);
+}
+
+.content > .aboutme {
+    text-align: justify;
+}
+
+.aboutme img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid var(--mainColor);
+    float: left;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+blockquote{
+    font-size: var(--bQuoteFontSize);
+    background: var(--bQuoteBackground);
+    border: 1px solid var(--mainColor);
+    border-left: 10px solid var(--mainColor);
+    margin: .5em 10px;
+    padding: 0 10px;
+    padding: 10px 20px;
+    line-height: var(--bQuoteLineHeight);
+}
+
+.keyword {
+    color: var(--mainColor);
+}
+
+div.menu {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+menu {
+    text-align: justify;
+    color: var(--textColor);
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--textColor);
+    text-decoration: underline;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px;
+    margin-bottom: 50px;
+    transition: all .2s ease-in-out;
+    padding-left: 20px;
+    width: 100%
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 54px;
+}
+
+.card:hover h3 {
+    color: var(--mainColor);
+}
+
+.post-date, .minutes {
+    font-size: 12px;
+}
+
+.minutes {
+    color: var(--postDetailColor);
+}
+
+.post-content {
+    line-height: 150%
+}
